@@ -192,8 +192,6 @@ def send_attack_finished(message, user_name, target, port, time_duration, remain
     bot.send_message(message.chat.id, 
                      f"🚀 • 𝙉𝙀𝙓𝙏 𝘼𝙏𝙏𝘼𝘾𝙆 𝙍𝙀𝘼𝘿𝙔 ⚡")
     
-    bot.send_message(message.chat.id, "🚀 • 𝙉𝙀𝙓𝙏 𝘼𝙏𝙏𝘼𝘾𝙆 𝙍𝙀𝘼𝘿𝙔 ⚡")
-    
 @bot.message_handler(commands=['check_cooldown'])
 def check_cooldown(message):
     if global_last_attack_time and (datetime.datetime.now() - global_last_attack_time).seconds < COOLDOWN_TIME:
@@ -296,7 +294,7 @@ def handle_screenshot(message):
                          f"📸 • 𝙁𝙀𝙀𝘿𝘽𝘼𝘾𝙆 𝙍𝙀𝘾𝙀𝙄𝙑𝙀𝘿\n"
                          f"👤 • 𝙐𝙎𝙀𝙍 : {user_name}\n"
                          f"🆔 • 𝙄𝘿 : {user_id}\n"
-                         f"🔢 • 𝙎𝙎 𝙉𝙤. : {feedback_count}")
+                         f"🔢 • 𝙎𝘾𝙍𝙀𝙀𝙉𝙎𝙃𝙊𝙏 𝙉𝙤. : {feedback_count}")
 
         bot.reply_to(message, "✅ 𝙁𝙚𝙚𝙙𝙗𝙖𝙘𝙠 𝘼𝙘𝙘𝙚𝙥𝙩𝙚𝙙! 𝙉𝙚𝙭𝙩 𝘼𝙩𝙩𝙖𝙘𝙠 𝙍𝙚𝙖𝙙𝙮🚀")
     else:
@@ -307,7 +305,7 @@ def welcome_start(message):
     response = f"""🌟🔥 𝙒𝙀𝙇𝘾𝙊𝙈𝙀 𝘽𝙍𝙊 {user_name} 🔥🌟
     
 🚀 ‼️ 𝗥𝗮𝗛𝗨𝗟 𝘅 𝗗𝗶𝗟𝗗𝗢𝗦™ 𝗣𝗨𝗕𝗟𝗜𝗖 𝗕𝗢𝗧 𝗔𝗖𝗖𝗘𝗦𝗦 𝗗𝗘𝗡𝗜𝗘𝗗  ‼️
- 
+     ✔️𝙊𝙒𝙉𝙀𝙍 : @RAHUL_RESPECT
 💥 𝙏𝙝𝙚 𝙒𝙤𝙧𝙡𝙙'𝙨 𝘽𝙚𝙨𝙩 𝘿𝙄𝙇𝘿𝙊𝙎 𝘽𝙊𝙏🔥  
 
 🔗 𝙏𝙤 𝙐𝙨𝙚 𝙏𝙝𝙞𝙨 𝘽𝙤𝙩, 𝙅𝙤𝙞𝙣 𝙉𝙤𝙬 :  
